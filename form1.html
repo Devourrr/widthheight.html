@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form예제</title>
+</head>
+<body>
+
+<h2>Text input fields</h2>
+<form action="https://www.w3schools.com/action_page.php" method="post" style="width:50%;">
+	<fieldset> <!-- 입력양식의 그룹화 -->
+		<legend>Personalia:</legend> <!-- 그룹이름 -->
+		<label for="fname">First name:</label><br> <!-- 입력창 name이 fname에 대한 이름 -->
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<!--name속성은 서버로 보낼시 속성 이름 value는 기본값이고 입력시에는 입력된값 -->
+		<label for="lname">Last name:</label><br>
+	    <input type="text" id="lname" name="lname" value="Doe"><br/>
+	    <label for="pass">password:</label><br>
+	    <input type="password" id="pass" name="pass"><br/>
+	    <!-- radio button 버튼모양이 동그라미 그룹중 하나만 선택됨-->
+	    <input type="radio" id="male" name="gender" value="male">
+	    <label for="male">Male</label><br>
+	    <input type="radio" id="female" name="gender" value="female">
+	  	<label for="female">Female</label><br>
+	  	<input type="radio" id="other" name="gender" value="other">
+	  	<label for="other">Other</label><br/>
+	  	<!-- check box 버튼 모양이 네모, 여러개를 선택할수 있음 -->
+	  	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+	    <label for="vehicle1"> I have a bike</label><br>
+	    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+	  	<label for="vehicle2"> I have a car</label><br>
+	  	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+	  	<label for="vehicle3"> I have a boat</label><br><br>
+	  	<!-- submit는 클릭시 form의 action속성에 있는 url로 입력된 값들을 보냄 -->
+	  	<input type="submit" value="확인"> <!-- value는 버튼 이름 -->
+	</fieldset>  	
+</form>
+</body>
+</html>
+

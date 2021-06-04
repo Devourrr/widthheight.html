@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<title>List</title>
+</head>
+<body>
+
+<h3>unordered list</h3>
+<ul> <!-- unordered list 태그  디폴트로 검은 원 마크-->
+	<li>커피</li> <!-- 블록레베로 줄 바꾸어 나타남 -->
+	<li>티</li>
+	<li>밀크</li>
+</ul>
+<h3>마크를 바꾸기</h3>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h3>ordered list</h3>
+<ol> <!-- ordered list 태그  디폴트로 숫자로 표시됨-->
+	<li>커피</li> <!-- 블록레베로 줄 바꾸어 나타남 -->
+	<li>티</li>
+	<li>밀크</li>
+</ol>
+
+<br>
+<ol type="A"> <!-- 대문자 알파벳을 이용하여 마크 표시 -->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h3>dl 리스트</h3>
+<dl>
+  <dt>Coffee</dt> <!-- 용어 -->
+  <dd>- black hot drink</dd>  <!-- 설명 -->
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h3>중첩 리스트</h3>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul> <!-- 중첩 리스트 -->
+      <li>Black tea</li> <!-- 마크는 부모 마크와 다른 마크를 표시 -->
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+</body>
+</html>

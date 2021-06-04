@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<title>문단 나타내기</title>
+</head>
+<body>
+
+<!-- 블록레벨이므로 각자 새줄에서 보임 -->
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<!-- 공백과 빈줄처리는 공백 하나로만 처리 -->
+<p>
+This paragraph 
+contains a lot of lines
+in the source code,
+
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+
+<br/> <!-- 줄바꾸기 -->
+
+<!-- 코딩된대로 보여주기 -->
+<pre>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</pre>
+</body>
+</html>
